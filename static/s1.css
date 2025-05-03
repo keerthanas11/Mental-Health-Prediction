@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.result-wrapper {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.result-card {
+    background: rgba(255, 255, 255, 0.25);
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 600px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.result-title {
+    font-size: 34px;
+    margin-bottom: 25px;
+    color: #1e2a38;
+    font-weight: 700;
+}
+
+.result-message {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: #1e88e5;
+    font-weight: bold;
+}
+
+.stress-description {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.level-text {
+    margin: 0 auto 15px auto;
+    padding: 14px;
+    border-radius: 8px;
+    max-width: 90%;
+    font-weight: 500;
+}
+
+.level-text.high {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.level-text.moderate {
+    background-color: #fff3e0;
+    color: #ef6c00;
+}
+
+.level-text.low {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.suggestion {
+    margin: 10px 0 20px;
+    color: #111;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.youtube-link {
+    margin: 8px 0;
+}
+
+.youtube-link a {
+    text-decoration: none;
+    color: #1565c0;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.youtube-link a:hover {
+    color: #0d47a1;
+}
+
+.try-again-button {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #1e88e5;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.try-again-button:hover {
+    background-color: #1565c0;
+}
