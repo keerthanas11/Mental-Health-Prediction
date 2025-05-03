@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='s1.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="result-wrapper">
+        <div class="result-card">
+            <h2 class="result-title">🎯 Result</h2>
+
+            <div class="stress-description">
+                {% if stress_level == 0 %}
+                <p class="result-message">
+                    Based on the inputs, <i><b><span class="highlight">The Predicted Stress Level: 0</span></b></i>
+                </p>
+                <p class="level-text low">Great! you are experiencing <strong>Low Stress Level</strong>.</p>
+                <p class="suggestion">
+                    That's amazing! Keep up the balance by continuing healthy habits like exercise, mindfulness, and doing
+                    what brings you joy. Stay consistent and keep shining!
+                </p>
+                <div class="youtube-link"><a href="https://www.youtube.com/watch?v=inpok4MKVLM" target="_blank">🌞 Watch: Daily Positive Affirmations</a></div>
+                <div class="youtube-link"><a href="https://www.youtube.com/watch?v=UNQhuFL6CWg" target="_blank">🎯 Believe in Yourself - Speech</a></div>
+                <div class="youtube-link"><a href="https://www.youtube.com/watch?v=Z3uFfAgiD2o" target="_blank">🌄 Morning Gratitude Meditation</a></div>
+
+                {% elif stress_level == 1 %}
+                <p class="result-message">
+                    Based on the inputs, <i><b><span class="highlight">The Predicted Stress Level: 1</span></b></i>
+                </p>
+                <p class="level-text moderate">This indicates a <strong>Moderate Stress Level</strong>.</p>
+                <p class="suggestion">
+                    You’re doing well, but don’t forget to check in with yourself. Take small breaks, listen to music, or
+                    sip your favorite tea. Self-care is not selfish—it’s essential.
+                </p>
+                <div class="youtube-link"><a href="https://www.youtube.com/watch?v=2L2lnxIcNmo" target="_blank">🎵 Watch: Relaxing Music for the Mind</a></div>
+                <div class="youtube-link"><a href="https://www.youtube.com/watch?v=inpok4MKVLM" target="_blank">🌞 Daily Positive Affirmations</a></div>
+                <div class="youtube-link"><a href="https://www.youtube.com/watch?v=OqR16Zl01zM" target="_blank">💬 5-Minute Positive Self-Talk</a></div>
+
+                {% else %}
+                <p class="result-message">
+                    Based on the inputs, <i><b><span class="highlight">The Predicted Stress Level: 2</span></b></i>
+                </p>
+                <p class="level-text high">This indicates a <strong>High Stress Level</strong>.</p>
+                <p class="suggestion">
+                    <b>Take a deep breath</b>—you're stronger than you think. It's okay to feel overwhelmed at times. Try taking
+                    a walk, journaling your thoughts, or reaching out to a friend. Remember, storms don't last forever.
+                </p>
+                <div class="youtube-link"><a href="https://www.youtube.com/watch?v=ZToicYcHIOU" target="_blank">🧘 Guided Meditation for Stress Relief</a></div>
+                <div class="youtube-link"><a href="https://www.youtube.com/watch?v=O-6f5wQXSu8" target="_blank">🧘‍♂ 10-Minute Meditation for Stress</a></div>
+                <div class="youtube-link"><a href="https://www.youtube.com/watch?v=SEfs5TJZ6Nk" target="_blank">🌬 Deep Breathing to Calm Down</a></div>
+                {% endif %}
+            </div>
+
+            <a href="{{ url_for('login') }}" class="try-again-button">🔁 Try Again</a>
+            <a href="http://localhost:3000/MainHome" class="try-again-button" style="margin-left: 10px;">🏠 Go to Main Home</a>
+
+        </div>
+    </div>
+</body>
+
+</html>

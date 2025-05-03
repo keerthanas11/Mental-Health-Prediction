@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mental Health Prediction System</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='s2.css') }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="overlay">
+    <div class="content">
+      <h1>Welcome to</h1>
+      <h2>Mental Health Prediction System</h2>
+      <p>Your mental wellness journey begins here. Analyze, understand, and take charge of your mental health.</p>
+      <div class="images">
+        <img src="{{ url_for('static', filename='pic1.jpg') }}" alt="Descriptive Alt Text">
+
+        <img src="{{ url_for('static', filename='pic3.jpg') }}" alt="Descriptive Alt Text">
+      </div>
+      <a href="/login" class="predict-button" method="get">🔍 Predict Now</a>
+      <a href="http://localhost:3000/MainHome" class="predict-button" style="margin-left: 10px;">🏠 Main Home</a>
+    </div>
+  </div>
+</body>
+</html>
