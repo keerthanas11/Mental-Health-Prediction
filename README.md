@@ -26,23 +26,24 @@ A machine learning-based desktop application that analyzes various personal and 
 
 ## 📂 Dataset
 
-- The dataset contains **~1100 columns**, each representing quantified responses to various factors.
-- Target label: `Stress Level` (0 - Low, 1 - Moderate, 2 - High)
+- 📄 The dataset contains **~1100 columns**, each representing quantified responses to various factors.
+- 🎯 Target label: `Stress Level` (0 - Low, 1 - Moderate, 2 - High)
 
 ---
 
 ## 📸 Screenshots
 
-| 📥 Home Page | 📊 Input Form |
+| 🏠 Home Page | 📝 Input Form |
 |--------------|----------------------|
-| <img src="screenshots/home.jpg" width="200"/> | <img src="screenshots/input.jpg" width="200"/> |
+| <img src="screenshots/home.png" width="300"/> | <img src="screenshots/form.png" width="300"/> |
 
-| 📥 Result -1  | 📊 Result - 2 |
-|--------------|----------------------|
-| <img src="screenshots/low.jpg" width="200"/> | <img src="screenshots/moderate.jpg" width="200"/> |
+| ✅ Result - Low Stress | ⚠️ Result - Moderate Stress |
+|------------------------|-----------------------------|
+| <img src="screenshots/low.png" width="300"/> | <img src="screenshots/moderate.png" width="300"/> |
 
-| 📦 Result - 3 |
-|----------------|
-| <img src="screenshots/hign.jpg" width="300"/> |
+| 🚨 Result - High Stress |
+|--------------------------|
+| <img src="screenshots/high.png" width="300"/> |
+
 ---
 
